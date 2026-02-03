@@ -6,7 +6,8 @@ import os
 import logging
 from database import engine, Base
 from controllers import (
-    user_router
+    user_router,
+    product_router
 )
 
 logging.basicConfig(
@@ -29,6 +30,7 @@ app.add_middleware(
     allow_headers=["*"]
 )
 app.include_router(user_router)
+app.include_router(product_router)
 
 @app.get('/')
 def root():

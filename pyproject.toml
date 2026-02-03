@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "uvicorn[standard]",
-    "fastapi",
+    "fastapi[standard]",
     "sqlalchemy",
     "psycopg2-binary",
     "pydantic",
